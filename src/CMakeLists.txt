@@ -21,7 +21,23 @@ add_library(soloud STATIC
     audiosource/wav/dr_impl.cpp
     audiosource/wav/soloud_wav.cpp
     audiosource/wav/soloud_wavstream.cpp
+    # backend/alsa/soloud_alsa.cpp
+    # backend/coreaudio/soloud_coreaudio.cpp
+    # backend/jack/soloud_jack.cpp
+    # backend/miniaudio/soloud_miniaudio.cpp
+    # backend/nosound/soloud_nosound.cpp
+    # backend/null/soloud_null.cpp
     backend/openal/soloud_openal.cpp
+    # backend/opensles/soloud_opensles.cpp
+    # backend/oss/soloud_oss.cpp
+    # backend/portaudio/soloud_portaudio.cpp
+    # backend/sdl/soloud_sdl1.cpp
+    # backend/sdl/soloud_sdl2.cpp
+    # backend/sdl2_static/soloud_sdl2_static.cpp
+    # backend/sdl_static/soloud_sdl_static.cpp
+    # backend/wasapi/soloud_wasapi.cpp
+    # backend/winmm/soloud_winmm.cpp
+    # backend/xaudio2/soloud_xaudio2.cpp
     core/soloud.cpp
     core/soloud_audiosource.cpp
     core/soloud_bus.cpp
