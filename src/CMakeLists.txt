@@ -78,11 +78,11 @@ add_library(soloud STATIC
     filter/soloud_lofifilter.cpp
     filter/soloud_robotizefilter.cpp
     filter/soloud_waveshaperfilter.cpp
-    tools/codegen/main.cpp
-    tools/lutgen/main.cpp
-    tools/resamplerlab/main.cpp
-    tools/resamplerlab/stb_image_write.c
-    tools/sanity/sanity.cpp
+    # tools/codegen/main.cpp
+    # tools/lutgen/main.cpp
+    # tools/resamplerlab/main.cpp
+    # tools/resamplerlab/stb_image_write.c
+    # tools/sanity/sanity.cpp
 )
 
 target_include_directories(
