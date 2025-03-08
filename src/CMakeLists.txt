@@ -35,7 +35,6 @@ add_library(soloud STATIC
     backend/sdl/soloud_sdl2.cpp
     backend/sdl2_static/soloud_sdl2_static.cpp
     backend/sdl_static/soloud_sdl_static.cpp
-    backend/vita_homebrew/soloud_vita_homebrew.cpp
     backend/wasapi/soloud_wasapi.cpp
     backend/winmm/soloud_winmm.cpp
     backend/xaudio2/soloud_xaudio2.cpp
