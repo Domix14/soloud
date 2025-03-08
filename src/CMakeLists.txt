@@ -76,6 +76,6 @@ add_library(soloud STATIC
 target_include_directories(
     soloud
   PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
-  PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include/voxlight>)
+  PUBLIC $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include/soloud>)
 
 add_library(soloud::soloud ALIAS soloud)
