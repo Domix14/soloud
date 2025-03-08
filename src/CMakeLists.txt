@@ -1,4 +1,5 @@
 add_library(soloud STATIC
+
     audiosource/ay/chipplayer.cpp
     audiosource/ay/sndbuffer.cpp
     audiosource/ay/sndchip.cpp
@@ -7,6 +8,7 @@ add_library(soloud STATIC
     audiosource/monotone/soloud_monotone.cpp
     audiosource/noise/soloud_noise.cpp
     audiosource/openmpt/soloud_openmpt.cpp
+    audiosource/openmpt/soloud_openmpt_dll.c
     audiosource/sfxr/soloud_sfxr.cpp
     audiosource/speech/darray.cpp
     audiosource/speech/klatt.cpp
@@ -21,6 +23,7 @@ add_library(soloud STATIC
     audiosource/wav/dr_impl.cpp
     audiosource/wav/soloud_wav.cpp
     audiosource/wav/soloud_wavstream.cpp
+    audiosource/wav/stb_vorbis.c
     # backend/alsa/soloud_alsa.cpp
     # backend/coreaudio/soloud_coreaudio.cpp
     # backend/jack/soloud_jack.cpp
@@ -32,10 +35,14 @@ add_library(soloud STATIC
     # backend/opensles/soloud_opensles.cpp
     # backend/oss/soloud_oss.cpp
     # backend/portaudio/soloud_portaudio.cpp
+    # backend/portaudio/soloud_portaudio_dll.c
     # backend/sdl/soloud_sdl1.cpp
+    # backend/sdl/soloud_sdl1_dll.c
     # backend/sdl/soloud_sdl2.cpp
+    # backend/sdl/soloud_sdl2_dll.c
     # backend/sdl2_static/soloud_sdl2_static.cpp
     # backend/sdl_static/soloud_sdl_static.cpp
+    # backend/vita_homebrew/soloud_vita_homebrew.cpp
     # backend/wasapi/soloud_wasapi.cpp
     # backend/winmm/soloud_winmm.cpp
     # backend/xaudio2/soloud_xaudio2.cpp
@@ -71,6 +78,11 @@ add_library(soloud STATIC
     filter/soloud_lofifilter.cpp
     filter/soloud_robotizefilter.cpp
     filter/soloud_waveshaperfilter.cpp
+    tools/codegen/main.cpp
+    tools/lutgen/main.cpp
+    tools/resamplerlab/main.cpp
+    tools/resamplerlab/stb_image_write.c
+    tools/sanity/sanity.cpp
 )
 
 target_include_directories(
