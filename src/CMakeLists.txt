@@ -28,6 +28,7 @@ add_library(soloud STATIC
     # backend/nosound/soloud_nosound.cpp
     # backend/null/soloud_null.cpp
     backend/openal/soloud_openal.cpp
+    backend/openal/soloud_openal_dll.c
     # backend/opensles/soloud_opensles.cpp
     # backend/oss/soloud_oss.cpp
     # backend/portaudio/soloud_portaudio.cpp
