@@ -24,28 +24,28 @@ add_library(soloud STATIC
     audiosource/wav/soloud_wav.cpp
     audiosource/wav/soloud_wavstream.cpp
     audiosource/wav/stb_vorbis.c
-    # backend/alsa/soloud_alsa.cpp
-    # backend/coreaudio/soloud_coreaudio.cpp
-    # backend/jack/soloud_jack.cpp
-    # backend/miniaudio/soloud_miniaudio.cpp
-    # backend/nosound/soloud_nosound.cpp
-    # backend/null/soloud_null.cpp
-    # backend/openal/soloud_openal.cpp
-    # backend/openal/soloud_openal_dll.c
+    backend/alsa/soloud_alsa.cpp
+    backend/coreaudio/soloud_coreaudio.cpp
+    backend/jack/soloud_jack.cpp
+    backend/miniaudio/soloud_miniaudio.cpp
+    backend/nosound/soloud_nosound.cpp
+    backend/null/soloud_null.cpp
+    backend/openal/soloud_openal.cpp
+    backend/openal/soloud_openal_dll.c
     backend/opensles/soloud_opensles.cpp
-    # backend/oss/soloud_oss.cpp
-    # backend/portaudio/soloud_portaudio.cpp
-    # backend/portaudio/soloud_portaudio_dll.c
-    # backend/sdl/soloud_sdl1.cpp
-    # backend/sdl/soloud_sdl1_dll.c
-    # backend/sdl/soloud_sdl2.cpp
-    # backend/sdl/soloud_sdl2_dll.c
-    # backend/sdl2_static/soloud_sdl2_static.cpp
-    # backend/sdl_static/soloud_sdl_static.cpp
-    # backend/vita_homebrew/soloud_vita_homebrew.cpp
+    backend/oss/soloud_oss.cpp
+    backend/portaudio/soloud_portaudio.cpp
+    backend/portaudio/soloud_portaudio_dll.c
+    backend/sdl/soloud_sdl1.cpp
+    backend/sdl/soloud_sdl1_dll.c
+    backend/sdl/soloud_sdl2.cpp
+    backend/sdl/soloud_sdl2_dll.c
+    backend/sdl2_static/soloud_sdl2_static.cpp
+    backend/sdl_static/soloud_sdl_static.cpp
+    backend/vita_homebrew/soloud_vita_homebrew.cpp
     backend/wasapi/soloud_wasapi.cpp
-    # backend/winmm/soloud_winmm.cpp
-    # backend/xaudio2/soloud_xaudio2.cpp
+    backend/winmm/soloud_winmm.cpp
+    backend/xaudio2/soloud_xaudio2.cpp
     core/soloud.cpp
     core/soloud_audiosource.cpp
     core/soloud_bus.cpp
@@ -78,11 +78,11 @@ add_library(soloud STATIC
     filter/soloud_lofifilter.cpp
     filter/soloud_robotizefilter.cpp
     filter/soloud_waveshaperfilter.cpp
-    # tools/codegen/main.cpp
-    # tools/lutgen/main.cpp
-    # tools/resamplerlab/main.cpp
-    # tools/resamplerlab/stb_image_write.c
-    # tools/sanity/sanity.cpp
+    tools/codegen/main.cpp
+    tools/lutgen/main.cpp
+    tools/resamplerlab/main.cpp
+    tools/resamplerlab/stb_image_write.c
+    tools/sanity/sanity.cpp
 )
 
 target_include_directories(
