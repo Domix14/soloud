@@ -30,9 +30,9 @@ add_library(soloud STATIC
     # backend/miniaudio/soloud_miniaudio.cpp
     # backend/nosound/soloud_nosound.cpp
     # backend/null/soloud_null.cpp
-    backend/openal/soloud_openal.cpp
-    backend/openal/soloud_openal_dll.c
-    # backend/opensles/soloud_opensles.cpp
+    # backend/openal/soloud_openal.cpp
+    # backend/openal/soloud_openal_dll.c
+    backend/opensles/soloud_opensles.cpp
     # backend/oss/soloud_oss.cpp
     # backend/portaudio/soloud_portaudio.cpp
     # backend/portaudio/soloud_portaudio_dll.c
@@ -43,7 +43,7 @@ add_library(soloud STATIC
     # backend/sdl2_static/soloud_sdl2_static.cpp
     # backend/sdl_static/soloud_sdl_static.cpp
     # backend/vita_homebrew/soloud_vita_homebrew.cpp
-    # backend/wasapi/soloud_wasapi.cpp
+    backend/wasapi/soloud_wasapi.cpp
     # backend/winmm/soloud_winmm.cpp
     # backend/xaudio2/soloud_xaudio2.cpp
     core/soloud.cpp
